@@ -1,4 +1,4 @@
-package se331.lab.rest.controller;
+package se331.lab.rest.controller.Event;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -9,11 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import se331.lab.rest.entity.Event;
-import se331.lab.rest.service.EventService;
-
-import javax.annotation.PostConstruct;
-import java.util.ArrayList;
-import java.util.List;
+import se331.lab.rest.service.Event.EventService;
 
 @Controller
 public class EventController {

@@ -1,4 +1,4 @@
-package se331.lab.rest.repository;
+package se331.lab.rest.repository.Event;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
