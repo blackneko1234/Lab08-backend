@@ -9,9 +9,10 @@ import se331.lab.rest.entity.Event;
 import java.util.List;
 
 @Service
-public class EventServiceImpl implements EventService{
+public class EventServiceImpl implements EventService {
     @Autowired
     EventDao eventDao;
+
     @Override
     public Integer getEventSize() {
         return eventDao.getEventSize();
@@ -25,5 +26,10 @@ public class EventServiceImpl implements EventService{
     @Override
     public Event getEvent(Long id) {
         return eventDao.getEvent(id);
+    }
+
+    @Override
+    public Event save(Event event) {
+        return eventDao.save(event);
     }
 }
